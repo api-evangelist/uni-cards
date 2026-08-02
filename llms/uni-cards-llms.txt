@@ -1,0 +1,17 @@
+# Uni Cards
+
+> Uni Cards (Uniorbit Technologies) is a Bangalore-based Indian consumer fintech, backed by Accel, that builds credit-card and pay-later products — including the Uni Pay 1/3rd Card and co-branded credit cards — delivered through its consumer mobile app. Uni Cards does not publish a public developer portal, API documentation, or client SDKs; api.uni.cards and docs.uni.cards resolve but are closed behind a Cloudflare challenge.
+
+## Company
+
+- [Website](https://www.uni.cards/): Uni Cards consumer site (Cloudflare bot-challenge protected)
+
+## API Evangelist profile
+
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/uni-cards/refs/heads/main/apis.yml): machine-readable profile of Uni Cards in the API Evangelist network
+- [Domain security](https://raw.githubusercontent.com/api-evangelist/uni-cards/refs/heads/main/security/uni-cards-domain-security.yml): probed TLS/HSTS/DNSSEC/SPF/DMARC posture for uni.cards
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/uni-cards/refs/heads/main/well-known/uni-cards-well-known.yml): status of /.well-known/ discovery paths on uni.cards hosts
+
+## Notes
+
+- No public OpenAPI, AsyncAPI, SDK packages (npm/PyPI checked), GitHub organization, MCP server, or developer program was found as of 2026-07-21.

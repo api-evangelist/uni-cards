@@ -1,7 +1,22 @@
 aid: uni-cards
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/uni-cards.png
 name: Uni Cards
-description: 'Uni Cards is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Uni Cards (Uniorbit Technologies) is a Bangalore-based Indian consumer fintech backed by
+  Accel that builds credit-card and pay-later products, best known for its Uni Pay 1/3rd Card and
+  co-branded credit cards delivered through its consumer mobile app. Uni Cards publishes no public
+  developer portal, API documentation, or SDKs; its api.uni.cards and docs.uni.cards hosts resolve
+  but are closed behind a Cloudflare challenge, so its API surface is internal-only today.'
 url: https://raw.githubusercontent.com/api-evangelist/uni-cards/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +26,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Credit Cards
+- Payments
+- Consumer Finance
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +41,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/uni-cards-domain-security.yml
+- type: LLMsTxt
+  url: llms/uni-cards-llms.txt
 - type: Website
   url: https://www.uni.cards/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

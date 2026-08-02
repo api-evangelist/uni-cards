@@ -1,0 +1,46 @@
+generated: '2026-07-21'
+method: searched
+source: live HTTP probes of uni.cards hosts (curl, browser UA)
+note: >-
+  All uni.cards hosts sit behind a Cloudflare bot challenge (cf-mitigated: challenge);
+  www serves real 404s for well-known paths, api/docs hosts return the 403 challenge for
+  every path. No well-known discovery documents were retrievable. api.uni.cards,
+  docs.uni.cards, and blog.uni.cards have dedicated DNS records (developers.uni.cards
+  does not resolve), suggesting internal API/docs hosts with no public surface.
+hosts:
+- host: https://www.uni.cards
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://api.uni.cards
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+- host: https://docs.uni.cards
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
